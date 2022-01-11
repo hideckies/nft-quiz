@@ -1,15 +1,15 @@
 <script>
     import { onMount } from 'svelte';
     import ModalResult from '$lib/components/ModalResult.svelte';
-    import { addresses } from '$lib/Contracts';
-    import { getRandIntRange, getRandItemFromArray } from '$lib/Utils';
+    import { contracts } from '$lib/Contracts';
+    import { getRandIntRange, getRandItemFromArray, getRandKeyFromObj } from '$lib/Utils';
 
     let isLoading = true;
 
     let nftLeft;
-    let nftLeftPrice;
+    let nftLeftPrice = 0;
     let nftRight;
-    let nftRightPrice;
+    let nftRightPrice = 0;
 
     let selected = "";
     let result = "";
@@ -29,68 +29,39 @@
 
         isLoading = true;
 
-        // Get random contract address
-        const addressForLeft = getRandItemFromArray(addresses);
-        nftLeft = await getNFT(addressForLeft);
-        const addressForRight = getRandItemFromArray(addresses);
-        nftRight = await getNFT(addressForRight);
+        // Get random contracts
+        const addressForLeft = getRandKeyFromObj(contracts);
+        nftLeft = await getNFT(addressForLeft, contracts[addressForLeft]);
+        const addressForRight = getRandKeyFromObj(contracts);
+        nftRight = await getNFT(addressForRight, contracts[addressForRight]);
+
+        if (nftLeft == null || nftRight == null) {
+            initNFT();
+        }
 
         isLoading = false;
     }
 
-    async function getNFT(contractAddress) {
+    async function getNFT(contractAddress, totalSupply) {
         const options = {method: 'GET'};
 
-        // try {
-        //     // Get collection slug
-        //     const resContract = await fetch(`https://api.opensea.io/api/v1/asset_contract/${contractAddress}`, options);
-        //     const resContractJson = await resContract.json();
-        //     const colSlug = resContractJson.collection.slug;
-        //     // Get total supply
-        //     const resColStats = await fetch(`https://api.opensea.io/api/v1/collection/${colSlug}/stats`, options);
-        //     const resColStatsJson = await resColStats.json();
-        //     const totalSupply = resColStatsJson.stats.total_supply;
-        //     // Random token Id
-        //     const tokenId = getRandIntRange(0, totalSupply);
-        //     // Final
-        //     const res = await fetch(`https://api.opensea.io/api/v1/asset/${contractAddress}/${tokenId}/`, options);
-        //     const resJson = await res.json();
-        //     return resJson;
-        // } catch (err) {
-        //     await initNFT();
-        // }
+        // Random token Id
+        const tokenId = getRandIntRange(0, totalSupply);
 
-        let colSlug;
-        let tokenId;
-
-        try {
-            // Get collection slug
-            const resContract = await fetch(`https://api.opensea.io/api/v1/asset_contract/${contractAddress}`, options);
-            const resContractJson = await resContract.json();
-            colSlug = resContractJson.collection.slug;
-        } catch (err) {
-            await initNFT();
-        } finally {
-            try {
-                // Get total supply
-                const resColStats = await fetch(`https://api.opensea.io/api/v1/collection/${colSlug}/stats`, options);
-                const resColStatsJson = await resColStats.json();
-                const totalSupply = resColStatsJson.stats.total_supply;
-                // Random token Id
-                tokenId = getRandIntRange(0, totalSupply);
-            } catch (err) {
-                await initNFT();
-            } finally {
-                try {
-                    // Final
-                    const res = await fetch(`https://api.opensea.io/api/v1/asset/${contractAddress}/${tokenId}/`, options);
-                    const resJson = await res.json();
-                    return resJson;
-                } catch (err) {
-                    await initNFT();
+        const res = await fetch(`https://api.opensea.io/api/v1/asset/${contractAddress}/${tokenId}/`, options)
+            .then(response => {
+                if (response.status >= 400 && response.status < 600) {
+                    initNFT();
                 }
-            }
+                return response;
+            });
+
+        if (res == null) {
+            return null;
         }
+
+        const resJson = await res.json();
+        return resJson;
     }
 
     function answer() {
@@ -155,7 +126,9 @@
                     background: ${selected === 'left' ? 'var(--color-yellow)' : 'var(--color-white)'};
                 `}
             >
+                {#if nftLeft}
                 <img src={nftLeft.image_url} alt="left" />
+                {/if}
             </div>
             <span id="vs">X</span>
             <div
@@ -165,7 +138,9 @@
                     background: ${selected === 'right' ? 'var(--color-yellow)' : 'var(--color-white)'};
                 `}
             >
+                {#if nftRight}
                 <img src={nftRight.image_url} alt="right" />
+                {/if}
             </div>
         {/if}
     </div>
@@ -178,6 +153,7 @@
     </button>
 </div>
 
+{#if nftLeft && nftRight}
 <ModalResult
     result={result}
     nftLeft={nftLeft}
@@ -186,6 +162,7 @@
     nftRightPrice={nftRightPrice}
     on:closeModal={closeModal}
     on:clickNext={clickNext} />
+{/if}
 
 <style>
     #content {
