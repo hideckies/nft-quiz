@@ -26,10 +26,10 @@
         <div class="block">
             <h3>📢 Request Your NFT!</h3>
             <p>
-                Please contact me on the
-                <a href="https://github.com/hideckies/nft-quiz">GitHub Issues</a>
+                Please contact on the
+                <a href="https://github.com/hideckies/nft-quiz" target="_blank" rel="noopener noreferrer">GitHub Issues</a>
                 or
-                <a href="https://twitter.com/hideckies">Twitter DM</a>
+                <a href="https://twitter.com/hideckies" target="_blank" rel="noopener noreferrer">Twitter DM</a>
                 .
             </p>
         </div>

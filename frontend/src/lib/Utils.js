@@ -11,7 +11,15 @@ function getRandItemFromArray(items) {
     return item;
 }
 
+
+function getRandKeyFromObj(obj) {
+    const keys = Object.keys(obj);
+
+    return keys[Math.floor(Math.random()*keys.length)];
+}
+
 export {
     getRandIntRange,
-    getRandItemFromArray
+    getRandItemFromArray,
+    getRandKeyFromObj,
 };
