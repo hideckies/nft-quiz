@@ -2,9 +2,15 @@
     /* Colors */
     --color-richblack: #000;
     --color-black: #222;
+    --color-darkgrey: #555;
     --color-grey: #999;
-    --color-lightred: #f25;
+    --color-lightgrey: #ddd;
     --color-red: #d25;
+    --color-lightred: #f25;
+    --color-darkyellow: #a60;
+    --color-yellow: #fd0;
+    --color-lightyellow: #ff8;
+    --color-gold: #db3;
     --color-white: #fff;
     /* Fonts */
     --font-family-montserrat: 'Montserrat', sans-serif;
@@ -28,17 +34,25 @@ body {
 button {
     border: none;
     border-radius: 6px;
-    background: var(--color-red);
+    background: var(--color-yellow);
     filter: drop-shadow(0 0 8px rgba(200,100,100,0.6));
     padding: 4px 12px;
     font-family: var(--font-family-montserrat);
-    color: var(--color-white);
+    color: var(--color-darkyellow);
     cursor: pointer;
 }
 button:hover {
-    background: var(--color-lightred);
+    background: var(--color-lightyellow);
 }
 button:disabled {
     opacity: 0.5;
     cursor: inherit;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0 0 0 8px;
+}
+li {
+    margin: 6px;
 }
