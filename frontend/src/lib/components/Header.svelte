@@ -30,7 +30,7 @@
     <div id="icons">
         <img src="/assets/question.png" alt="question" on:click={openModalAbout} class="icon" />
         <a href="https://github.com/hideckies/nft-quiz" target="_blank" rel="noopener noreferrer" class="icon">
-            <img src="/assets/github.png" alt="github" on:click={openModalAbout} />
+            <img src="/assets/github.png" alt="github" />
         </a>
     </div>
 </div>

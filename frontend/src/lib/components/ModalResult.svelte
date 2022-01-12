@@ -153,4 +153,10 @@
         font-size: 1.4em;
         font-weight: bold;
     }
+
+    @media (max-width: 480px) {
+        #modal-result {
+            width: 100vw;
+        }
+    }
 </style>
