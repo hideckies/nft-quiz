@@ -1,7 +1,7 @@
 ---
 name: Show My NFT
 about: Template for requesting to show your NFT
-title: ''
+title: Please show my NFT in the quiz
 labels: ''
 assignees: ''
 
