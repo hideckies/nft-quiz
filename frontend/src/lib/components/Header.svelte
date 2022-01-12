@@ -28,7 +28,10 @@
 <div id="title">
     <h1>NFT Quiz</h1>
     <div id="icons">
-        <img src="/assets/question.png" alt="question" on:click={openModalAbout} />
+        <img src="/assets/question.png" alt="question" on:click={openModalAbout} class="icon" />
+        <a href="https://github.com/hideckies/nft-quiz" target="_blank" rel="noopener noreferrer" class="icon">
+            <img src="/assets/github.png" alt="github" on:click={openModalAbout} />
+        </a>
     </div>
 </div>
 
@@ -57,6 +60,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    #icons .icon {
+        margin: 0 6px;
     }
     #icons img {
         width: 32px;
