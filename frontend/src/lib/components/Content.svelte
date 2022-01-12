@@ -139,11 +139,11 @@
                 on:click={() => selected = "left"}
                 class="nft left"
                 style={`
-                    background: ${selected === 'left' ? 'var(--color-yellow)' : 'var(--color-white)'};
+                    border:  ${selected === 'left' ? '4px solid var(--color-yellow)' : 'none'};
                 `}
             >
                 {#if nftLeft}
-                <img src={nftLeft.image_url} alt="left" />
+                <img src={nftLeft.image_url} alt="" />
                 {/if}
             </div>
             <span id="vs">X</span>
@@ -151,11 +151,11 @@
                 on:click={() => selected = "right"}
                 class="nft right"
                 style={`
-                    background: ${selected === 'right' ? 'var(--color-yellow)' : 'var(--color-white)'};
+                    border: ${selected === 'right' ? '4px solid var(--color-yellow)' : 'none'};
                 `}
             >
                 {#if nftRight}
-                <img src={nftRight.image_url} alt="right" />
+                <img src={nftRight.image_url} alt="" />
                 {/if}
             </div>
         {/if}
@@ -210,6 +210,7 @@
 
     .nft {
         box-sizing: border-box;
+        position: relative;
         width: 256px;
         height: 256px;
         background: var(--color-white);
@@ -227,7 +228,10 @@
         filter: drop-shadow(0 0 12px rgba(150,150,150,0.8));
     }
     .nft img {
-        width: 90%;
+        position: absolute;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
         border-radius: 6px;
     }
 
