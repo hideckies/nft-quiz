@@ -39,4 +39,14 @@
     .block .twitter {
         font-weight: bold;
     }
+
+    @media (max-width: 480px) {
+        footer {
+            flex-direction: column;
+        }
+
+        .block {
+            margin: 8px 0;
+        }
+    }
 </style>

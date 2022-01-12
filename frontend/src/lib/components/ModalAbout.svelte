@@ -84,4 +84,10 @@
         width: 100%;
         font-size: 1.4em;
     }
+
+    @media (max-width: 480px) {
+        #modal-about {
+            width: 80vw;
+        }
+    }
 </style>

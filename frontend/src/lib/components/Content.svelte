@@ -4,6 +4,9 @@
     import { contracts } from '$lib/Contracts';
     import { getRandIntRange, getRandItemFromArray, getRandKeyFromObj } from '$lib/Utils';
 
+    let startConfetti;
+    let stopConfetti;
+
     let isLoading = true;
 
     let nftLeft;
@@ -17,6 +20,10 @@
     let modalResultElem;
 
     onMount(async () => {
+        // Dynamic import
+        startConfetti = (await import('$lib/Confetti')).startConfetti;
+        stopConfetti = (await import('$lib/Confetti')).stopConfetti;
+
         await initNFT();
 
         // Get Modal element
@@ -24,6 +31,7 @@
     });
 
     async function initNFT() {
+        // Reset states
         selected = "";
         result = "";
 
@@ -100,12 +108,20 @@
         // Fade in
         modalResultElem.style.visibility = "visible";
         modalResultElem.style.opacity = "1";
+
+        // Confetti if win
+        if (result === 'win') {
+            startConfetti();
+        }
     }
 
     function closeModal() {
         // Fade out
         modalResultElem.style.visibility = "hidden";
         modalResultElem.style.opacity = "0";
+
+        // Stop confetti
+        stopConfetti();
     }
 
     async function clickNext() {
