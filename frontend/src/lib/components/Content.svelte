@@ -205,9 +205,10 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: 0.2s;
     }
     .nft:hover {
-        filter: drop-shadow(0 0 12px rgba(150,150,150,0.7));
+        filter: drop-shadow(0 0 12px rgba(150,150,150,0.8));
     }
     .nft img {
         width: 90%;
