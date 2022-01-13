@@ -6,8 +6,26 @@
  * 
  */
 export const contracts = {
+    // 0N1 Force
+    '0x3bf2922f4520a8BA0c2eFC3D2a1539678DaD5e9D': 7777,
+
+    // 0xmons
+    '0x0427743DF720801825a5c82e0582B1E915E0F750': 341,
+
+    // Adam Bomb Squad
+    '0x7AB2352b1D2e185560494D5e577F9D3c238b78C5': 25000,
+
     // alien frens
     '0x123b30e25973fecd8354dd5f41cc45a3065ef88c': 10000,
+
+    // Alpha Girl Club
+    '0x8c5029957Bf42c61d19a29075Dc4e00b626E5022': 9491,
+
+    // Angry Ape Army
+    '0x77640cf3F89A4F1B5CA3A1e5c87f3F5B12ebf87e': 3333,
+
+    // A.N.I.M.O
+    '0x569F26145F0C2fCc3dA68395BE3639009C53B6d8': 10000,
 
     // AO Art Ball
     '0x05844e9ae606f9867ae2047c93cac370d54ab2e1': 3519,
@@ -15,11 +33,20 @@ export const contracts = {
     // Australopithecus NFT
     // '0x0C8d0554404769D17898E215933765f80F0DB815': 2000,
 
+    // Bad Face Bots
+    '0x65CC7530e8C6f5a51257f7b7586361C4a22CeC93': 5555,
+
     // Bored Ape Yacht Club
     '0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d': 10000,
 
+    // CakedApes
+    '0xC1922A5aBFA18110827c0666b7bBac0389AB7396': 8888,
+
     // CloneX
     '0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b': 18430,
+
+    // Cool Cats
+    '0x1A92f7381B9F03921564a437210bB9396471050C': 9933,
 
     // Critterz
     '0x8ffb9b504d497e4000967391e70D542b8cC6748A': 3812,
@@ -30,8 +57,14 @@ export const contracts = {
     // CryptoBots
     '0xF7a6E15dfD5cdD9ef12711Bd757a9b6021ABf643': 10000,
 
+    // Crypto Chicks
+    '0x1981cc36b59cffdd24b01cc5d698daa75e367e04': 10000,
+
     // CryptoCrystal
     '0xcFbC9103362AEc4ce3089f155c2DA2EEa1cB7602': 10053,
+
+    // CryptoKongz VX
+    '0x7EA3Cca10668B8346aeC0bf1844A49e995527c8B': 14746,
 
     // CryptoMories
     '0x1a2F71468F656E97c2F86541E57189F59951efe7': 10000,
@@ -48,6 +81,9 @@ export const contracts = {
     // CyberKongz
     '0x57a204AA1042f6E66DD7730813f4024114d74f37': 5000,
 
+    // Dapper Dinos
+    '0x2D0Ee46b804f415Be4dC8aa1040834F5125EBD2E': 9972,
+
     // DeadFellaz
     '0x2acAb3DEa77832C09420663b0E1cB386031bA17B': 10000,
 
@@ -57,14 +93,38 @@ export const contracts = {
     // Doodles
     '0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e': 10000,
 
+    // FameLadySquad
+    '0xf3E6DbBE461C6fa492CeA7Cb1f5C5eA660EB1B47': 8888,
+
+    // FlowerGirls
+    '0x2eFa07CaC3395599db83035D196F2A0e7263F766': 10000,
+
     // FLUF
     '0xCcc441ac31f02cD96C153DB6fd5Fe0a2F4e6A68d': 10000,
 
     // Flyfish Club
     '0xc9D8F15803c645e98B17710a0b6593F097064bEF': 1520,
 
+    // ForgottenSouls
+    '0x251b5F14A825C537ff788604eA1b58e49b70726f': 584,
+
+    // Furballs
+    '0x2d004B72d8B7d36f9da2e4a14516618BF53Bac57': 7056,
+
+    // Fyat Lux
+    '0x14C4471A7F6dCAc4F03a81Ded6253eacEfF15B3d': 8080,
+
+    // GalaxyFightClub
+    '0x3702f4C46785BbD947d59A2516ac1ea30F2BAbF2': 9994,
+
+    // GEMMA
+    '0xc7D84b7d4a04ABcB9ADE97b8af212423F51D2aEA': 5000,
+
     // Gunslingers
     '0x7350271594848AB8c0371EF4aFeEf199c69c3E05': 7777,
+
+    // Gutter Cat Gang
+    '0xEdB61f74B0d09B2558F1eeb79B247c1F363Ae452': 3000,
 
     // IlluminatiNFT
     '0x26BAdF693F2b103B021c670c852262b379bBBE8A': 8128,
@@ -75,8 +135,17 @@ export const contracts = {
     // Jadu Hoverboard
     '0xeDa3b617646B5fc8C9c696e0356390128cE900F8': 6666,
 
+    // KingFrogs
+    '0xd668A2E001f3385B8BBC5a8682AC3C0D83C19122': 16318,
+
+    // Laid Bak Liamas
+    '0x40A0f793CCFD9Bc6f2532d06d022BE0f978ECBF3': 7000,
+
     // Lazy Lions
     '0x8943C7bAC1914C9A7ABa750Bf2B6B09Fd21037E0': 10080,
+
+    // LetsWalk
+    '0x0825F050E9B021A0E9de8CB1fb10b6C9F41e834C': 54,
 
     // Letters
     '0x614917F589593189ac27aC8B81064CBe450C35e3': 1000,
@@ -84,11 +153,20 @@ export const contracts = {
     // Little Lemon Friends
     '0x0b22fe0a2995c5389ac093400e52471dca8bb48a': 9999,
 
+    // Long Neckie Ladies
+    '0xBB3d13260B3f6893aCe34a4284BE70eCCF4CC0F1': 3333,
+
     // Meebits
     '0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7': 20000,
 
+    // MekaVerse
+    '0x9A534628B4062E123cE7Ee2222ec20B86e16Ca8F': 8888,
+
     // MetaHero Universe
     '0xFb10b1717C92e9cc2d634080c3c337808408D9E1': 60,
+
+    // MoodRollers
+    '0xE3234e57ac38890a9136247EAdFE1860316Ff6ab': 5000,
 
     // Mutant Ape Yacht Club
     '0x60E4d786628Fea6478F785A6d7e704777c86a7c6': 17718,
@@ -102,8 +180,20 @@ export const contracts = {
     // Neo Tokyo Outer Identities
     '0x698FbAACA64944376e2CDC4CAD86eaa91362cF54': 4492,
 
+    // Nuclear Nerds
+    '0x0F78C6eEE3C89Ff37fD9ef96bD685830993636F2': 8999,
+
+    // OnChainMonkey
+    '0x960b7a6BCD451c9968473f7bbFd9Be826EFd549A': 9500,
+
+    // OogaVerse
+    '0x9Ebab3b21b5EF5709BD476B022Fc432fc84C0E86': 2882,
+
     // OxyaOriginProject
     '0xE106C63E655dF0E300b78336af587F300Cff9e76': 7848,
+
+    // Parallel
+    '0x76BE3b62873462d2142405439777e971754E8E77': 382,
 
     // Phanta Bear
     '0x67D9417C9C3c250f61A83C7e8658daC487B56B09': 10000,
@@ -117,8 +207,29 @@ export const contracts = {
     // Ready Player Cat NFT
     '0xcdb7C1a6fE7e112210CA548C214F656763E13533': 4950,
 
+    // Robotos
+    '0x099689220846644F87D1137665CDED7BF3422747': 9999,
+
+    // Sad Girls Bar
+    '0x335eEEF8e93A7A757D9e7912044d9cd264e2b2D8': 10000,
+
     // Samura Sage
     '0x345C2Fa23160C63218DfAA25D37269F26C85cA47': 9999,
+
+    // Shiba Social Club
+    '0xD692cEd124A474f051f9744a301C26D1017B3D54': 7777,
+
+    // SlimHoods
+    '0x2931B181Ae9Dc8F8109eC41C42480933F411ef94': 5000,
+
+    // Slotie
+    '0x5fdB2B0C56Afa73B8ca2228e6aB92Be90325961d': 9921,
+
+    // Smilesss
+    '0x177EF8787CEb5D4596b6f011df08C86eb84380dC': 8726,
+
+    // SpikySpaceFish
+    '0x4503e3C58377a9d2A9ec3c9eD42a8a6a241Cb4e2': 10000,
 
     // SupDucks
     '0x3Fe1a4c1481c8351E91B64D5c398b159dE07cbc5': 10000,
@@ -128,6 +239,12 @@ export const contracts = {
 
     // The Indifferent Duck
     '0xfaC0b889703ab4Db3426eF67d437BEe3408941aC': 10000,
+
+    // The Jims
+    '0xE7Df058Ee3F091b46AB14B79B8efc5a5E46B275F': 2048,
+
+    // the littles NFT
+    '0xc6ec80029CD2aa4B0021cEb11248C07b25D2DE34': 10000,
 
     // The Metapreneurs
     '0x4fEEc948eB3d6a2Eb37560d4B2c16f1C9fe72Ef6': 10000,
@@ -141,9 +258,21 @@ export const contracts = {
     // Town Star
     '0xc36cF0cFcb5d905B8B513860dB0CFE63F6Cf9F5c': 426,
 
+    // Toy Boogers
+    '0xBF662A0e4069b58dFB9bceBEBaE99A6f13e06f5a': 3334,
+
+    // uwucrew
+    '0xF75140376D246D8B1E5B8a48E3f00772468b3c0c': 9670,
+
     // VOX Collectibles
     '0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C': 8888,
 
+    // Women Rise
+    '0x7f7685b4CC34BD19E2B712D8a89f34D219E76c35': 9908,
+
     // World Of Women
     '0xe785E82358879F061BC3dcAC6f0444462D4b5330': 10000,
+
+    // ZED Horses
+    '0xA5F1Ea7DF861952863dF2e8d1312f7305dabf215': 186983,
 };

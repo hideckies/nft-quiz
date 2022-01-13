@@ -43,8 +43,8 @@
         const addressForRight = getRandKeyFromObj(contracts);
         nftRight = await getNFT(addressForRight, contracts[addressForRight]);
 
-        if (nftLeft == null || nftRight == null) {
-            initNFT();
+        if (nftLeft === null || nftRight === null) {
+            await initNFT();
         }
 
         isLoading = false;
@@ -59,12 +59,12 @@
         const res = await fetch(`https://api.opensea.io/api/v1/asset/${contractAddress}/${tokenId}/`, options)
             .then(response => {
                 if (response.status >= 400 && response.status < 600) {
-                    initNFT();
+                    return null;
                 }
                 return response;
             });
 
-        if (res == null) {
+        if (res === null) {
             return null;
         }
 
@@ -169,7 +169,6 @@
     </button>
 </div>
 
-{#if nftLeft && nftRight}
 <ModalResult
     result={result}
     nftLeft={nftLeft}
@@ -178,7 +177,6 @@
     nftRightPrice={nftRightPrice}
     on:closeModal={closeModal}
     on:clickNext={clickNext} />
-{/if}
 
 <style>
     #content {

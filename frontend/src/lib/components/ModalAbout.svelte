@@ -13,7 +13,7 @@
     <div id="wrapper">
         <h2>🤑 Price Guessing Game 🤑</h2>
         <div class="block">
-            <p>This is a game that confirms your ability to determine the value of the NFT.</p>
+            <p>This is a game that confirms your ability to judge the value of the NFT.</p>
         </div>
         <div class="block">
             <h3>📜 Rules</h3>
@@ -33,6 +33,15 @@
                 .
             </p>
         </div>
+        <div class="block">
+            <h3>❓FAQ</h3>
+            <div class="subblock">
+                <h4>Q. Why the loading spinner is spinning forever?</h4>
+                <p>
+                    A. The OpenSea API is rate-limited. So if there is a lot of access within a certain period, the api will temporarily stop working. Please wait a while before trying.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -50,6 +59,8 @@
 
     #modal-about {
         width: 512px;
+        max-height: 70vh;
+        overflow-y: auto;
        	position: fixed;
         z-index: 101;
         top: 50%;
@@ -83,6 +94,13 @@
     .block h3 {
         width: 100%;
         font-size: 1.4em;
+    }
+    
+    .subblock h4 {
+        margin: 12px 0;
+    }
+    .subblock p {
+        margin: 0;
     }
 
     @media (max-width: 480px) {
