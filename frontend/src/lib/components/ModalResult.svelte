@@ -40,7 +40,11 @@
                 class="block"
             >
                 <span class="crown" style="visibility: {nftLeftPrice > nftRightPrice ? 'visible' : 'hidden'};">👑</span>
-                <img src="{nftLeft.image_url}" alt="left" />
+                {#if nftLeft.image_url === ""}
+                    <img src="/assets/image_not_available.png" alt="not avaiable" />
+                {:else}
+                    <img src={nftLeft.image_url} alt="" />
+                {/if}
                 <span class="price">
                     {Number(ethers.utils.formatEther(String(nftLeftPrice)))} ETH
                 </span>
@@ -61,7 +65,11 @@
                 class="block"
             >
                 <span class="crown" style="visibility: {nftLeftPrice < nftRightPrice ? 'visible' : 'hidden'};">👑</span>
-                <img src="{nftRight.image_url}" alt="right" />
+                {#if nftRight.image_url === ""}
+                    <img src="/assets/image_not_available.png" alt="not avaiable" />
+                {:else}
+                    <img src={nftRight.image_url} alt="" />
+                {/if}
                 <span class="price">
                     {Number(ethers.utils.formatEther(String(nftRightPrice)))} ETH
                 </span>
