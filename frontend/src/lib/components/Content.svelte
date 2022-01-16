@@ -1,8 +1,8 @@
 <script>
     import { onMount } from 'svelte';
     import ModalResult from '$lib/components/ModalResult.svelte';
-    import { contracts } from '$lib/Contracts';
-    import { getRandIntRange, getRandItemFromArray, getRandKeyFromObj } from '$lib/Utils';
+    import { nfts } from '$lib/NFTs';
+    import { getRandIntRange, getRandKeyFromObj } from '$lib/Utils';
 
     let startConfetti;
     let stopConfetti;
@@ -37,11 +37,11 @@
 
         isLoading = true;
 
-        // Get random contracts
-        const addressForLeft = getRandKeyFromObj(contracts);
-        nftLeft = await getNFT(addressForLeft, contracts[addressForLeft]);
-        const addressForRight = getRandKeyFromObj(contracts);
-        nftRight = await getNFT(addressForRight, contracts[addressForRight]);
+        // Get random NFTs
+        const addressForLeft = getRandKeyFromObj(nfts);
+        nftLeft = await getNFT(addressForLeft, nfts[addressForLeft]);
+        const addressForRight = getRandKeyFromObj(nfts);
+        nftRight = await getNFT(addressForRight, nfts[addressForRight]);
 
         if (nftLeft === null || nftRight === null) {
             await initNFT();
@@ -143,7 +143,11 @@
                 `}
             >
                 {#if nftLeft}
-                <img src={nftLeft.image_url} alt="" />
+                    {#if nftLeft.image_url === ""}
+                        <img src="/assets/image_not_available.png" alt="not avaiable" />
+                    {:else}
+                        <img src={nftLeft.image_url} alt="" />
+                    {/if}
                 {/if}
             </div>
             <span id="vs">X</span>
@@ -155,7 +159,11 @@
                 `}
             >
                 {#if nftRight}
-                <img src={nftRight.image_url} alt="" />
+                    {#if nftRight.image_url === ""}
+                        <img src="/assets/image_not_available.png" alt="not avaiable" />
+                    {:else}
+                        <img src={nftRight.image_url} alt="" />
+                    {/if}
                 {/if}
             </div>
         {/if}

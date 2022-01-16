@@ -41,8 +41,8 @@
     #title {
         position: relative;
         width: 100%;
-        background: var(--color-gold);
-        border-bottom: 10px solid var(--color-yellow);
+        background: var(--color-yellow);
+        border-bottom: 10px solid var(--color-lightyellow);
         padding: 14px 0;
         display: flex;
         flex-direction: row;

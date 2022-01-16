@@ -5,7 +5,7 @@
  * @valule the total supply
  * 
  */
-export const contracts = {
+export const nfts = {
     // 0N1 Force
     '0x3bf2922f4520a8BA0c2eFC3D2a1539678DaD5e9D': 7777,
 
@@ -59,6 +59,9 @@ export const contracts = {
 
     // Crypto Chicks
     '0x1981cc36b59cffdd24b01cc5d698daa75e367e04': 10000,
+
+    // CryptoCountries
+    '0x32d813d74836f2054a8820560A8b5604A2697360': 254,
 
     // CryptoCrystal
     '0xcFbC9103362AEc4ce3089f155c2DA2EEa1cB7602': 10053,
@@ -126,14 +129,26 @@ export const contracts = {
     // Gutter Cat Gang
     '0xEdB61f74B0d09B2558F1eeb79B247c1F363Ae452': 3000,
 
+    // Hall Of Fame Goat Lodge
+    '0x004f5683e183908D0f6b688239e3e2D5bbb066CA': 10000,
+
     // IlluminatiNFT
     '0x26BAdF693F2b103B021c670c852262b379bBBE8A': 8128,
+
+    // Illuvium
+    '0x4222b2a98dAa443C6a0a761300d7d6bfD9161E52': 21,
 
     // inBetweeners
     '0x94638Cbf3c54c1f956a5F05cBC0F9aFb6822020d': 10777,
 
     // Jadu Hoverboard
     '0xeDa3b617646B5fc8C9c696e0356390128cE900F8': 6666,
+
+    // Jake
+    '0x32d813d74836f2054a8820560A8b5604A2697360': 9,
+
+    // JOYWORLD JOYtoy
+    '0x0574c34385b039c2bb8db898f61b7767024a9449': 2852,
 
     // KingFrogs
     '0xd668A2E001f3385B8BBC5a8682AC3C0D83C19122': 16318,
@@ -266,6 +281,9 @@ export const contracts = {
 
     // VOX Collectibles
     '0xad9Fd7cB4fC7A0fBCE08d64068f60CbDE22Ed34C': 8888,
+
+    // War Riders
+    '0x2d6e10561b320c4f31a903bf0fa92a1ed58637c0': 13288,
 
     // Women Rise
     '0x7f7685b4CC34BD19E2B712D8a89f34D219E76c35': 9908,

@@ -6,7 +6,7 @@
 
 <svelte:head>
     <title>NFT Quiz - A Price Guessing Game</title>
-    <meta name='description' content='Which is expensive? Make sure the NFT is valuable to you. This is a game that confirms your ability to judge the value of the NFT.'>
+    <meta name='description' content='Which is expensive? Make sure the NFT is valuable to you. This is a game that confirms your ability to judge the value of the NFT. The list of NFTs contains the major collectibles like the Bored Ape Yacht Club, CryptoPunks, LazyLions.'>
 
     <!-- Socials -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nft-quiz.hdks.org" />
     <meta property="og:title" content="NFT Quiz" />
-    <meta property="og:description" content="Which is expensive? Make sure the NFT is valuable to you. This is a game that confirms your ability to judge the value of the NFT." />
+    <meta property="og:description" content="Which is expensive? Make sure the NFT is valuable to you. This is a game that confirms your ability to judge the value of the NFT. The list of NFTs contains the major collectibles like the Bored Ape Yacht Club, CryptoPunks, LazyLions." />
     <meta property="og:image" content="https://nft-quiz.hdks.org/assets/og_image.png" />
 </svelte:head>
 
