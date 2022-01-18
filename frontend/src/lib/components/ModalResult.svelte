@@ -79,6 +79,17 @@
         <button on:click={clickNext} id="next">
             Next
         </button>
+        <div id="share">
+            <a
+                href="https://twitter.com/intent/tweet?text=I've%20challenged%20the%20NFT%20QUIZ%20!"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-size="large"
+                class="twitter-share-button"
+            >
+                Tweet
+            </a>
+        </div>
     </div>
 </div>
 
@@ -152,6 +163,15 @@
         margin: 0 18px;
         font-size: 2.6em;
         font-weight: bold;
+    }
+
+    #share {
+        margin: 12px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     #next {
