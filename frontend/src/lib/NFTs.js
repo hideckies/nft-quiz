@@ -21,6 +21,9 @@ export const nfts = {
     // Alpha Girl Club
     '0x8c5029957Bf42c61d19a29075Dc4e00b626E5022': 9491,
 
+    // Alpacadabras
+    '0x3db5463a9e2d04334192c6f2dd4b72def4751a61': 9669,
+
     // Angry Ape Army
     '0x77640cf3F89A4F1B5CA3A1e5c87f3F5B12ebf87e': 3333,
 
@@ -39,6 +42,9 @@ export const nfts = {
     // Bored Ape Yacht Club
     '0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d': 10000,
 
+    // Boss Beauties
+    '0xb5c747561a185a146f83cfff25bdfd2455b31ff4': 9999,
+
     // CakedApes
     '0xC1922A5aBFA18110827c0666b7bBac0389AB7396': 8888,
 
@@ -47,6 +53,9 @@ export const nfts = {
 
     // Cool Cats
     '0x1A92f7381B9F03921564a437210bB9396471050C': 9933,
+
+    // CoolmansUniverse
+    '0xa5c0bd78d1667c13bfb403e2a3336871396713c5': 10000,
 
     // Critterz
     '0x8ffb9b504d497e4000967391e70D542b8cC6748A': 3812,
@@ -129,6 +138,9 @@ export const nfts = {
     // Gutter Cat Gang
     '0xEdB61f74B0d09B2558F1eeb79B247c1F363Ae452': 3000,
 
+    // Gutter Dogs
+    '0x6e9da81ce622fb65abf6a8d8040e460ff2543add': 2923,
+
     // Hall Of Fame Goat Lodge
     '0x004f5683e183908D0f6b688239e3e2D5bbb066CA': 10000,
 
@@ -149,6 +161,9 @@ export const nfts = {
 
     // JOYWORLD JOYtoy
     '0x0574c34385b039c2bb8db898f61b7767024a9449': 2852,
+
+    // Killer GF
+    '0x6be69b2a9b153737887cfcdca7781ed1511c7e36': 7760,
 
     // KingFrogs
     '0xd668A2E001f3385B8BBC5a8682AC3C0D83C19122': 16318,
@@ -180,6 +195,9 @@ export const nfts = {
     // MetaHero Universe
     '0xFb10b1717C92e9cc2d634080c3c337808408D9E1': 60,
 
+    // mfer
+    '0x79fcdef22feed20eddacbb2587640e45491b757f': 10021,
+
     // MoodRollers
     '0xE3234e57ac38890a9136247EAdFE1860316Ff6ab': 5000,
 
@@ -195,6 +213,9 @@ export const nfts = {
     // Neo Tokyo Outer Identities
     '0x698FbAACA64944376e2CDC4CAD86eaa91362cF54': 4492,
 
+    // NFTrees
+    '0xeaa4c58427c184413b04db47889b28b5c98ebb7b': 420,
+
     // Nuclear Nerds
     '0x0F78C6eEE3C89Ff37fD9ef96bD685830993636F2': 8999,
 
@@ -209,6 +230,9 @@ export const nfts = {
 
     // Parallel
     '0x76BE3b62873462d2142405439777e971754E8E77': 382,
+
+    // Persona Lamps
+    '0xa3b041ee6b56bccbc54a3048417d82fe67736f62': 4443,
 
     // Phanta Bear
     '0x67D9417C9C3c250f61A83C7e8658daC487B56B09': 10000,
@@ -234,6 +258,9 @@ export const nfts = {
     // Shiba Social Club
     '0xD692cEd124A474f051f9744a301C26D1017B3D54': 7777,
 
+    // SHIBOSIS,
+    '0x11450058d796b02eb53e65374be59cff65d3fe7f': 10000,
+
     // SlimHoods
     '0x2931B181Ae9Dc8F8109eC41C42480933F411ef94': 5000,
 
@@ -245,6 +272,9 @@ export const nfts = {
 
     // SpikySpaceFish
     '0x4503e3C58377a9d2A9ec3c9eD42a8a6a241Cb4e2': 10000,
+
+    // Stone Ape Club
+    '0x984f7b398d577c0adde08293a53ae9d3b6b7a5c5': 6666,
 
     // SupDucks
     '0x3Fe1a4c1481c8351E91B64D5c398b159dE07cbc5': 10000,
