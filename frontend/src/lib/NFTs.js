@@ -12,6 +12,9 @@ export const nfts = {
     // 0xmons
     '0x0427743DF720801825a5c82e0582B1E915E0F750': 341,
 
+    // 3Landers
+    '0xb4d06d46A8285F4EC79Fd294F78a881799d8cEd9': 10000,
+
     // Adam Bomb Squad
     '0x7AB2352b1D2e185560494D5e577F9D3c238b78C5': 25000,
 
@@ -105,6 +108,9 @@ export const nfts = {
     // Doodles
     '0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e': 10000,
 
+    // Edenhorde
+    '0x9eEAeCBE2884AA7e82f450E3Fc174F30Fc2a8de3': 8673,
+
     // FameLadySquad
     '0xf3E6DbBE461C6fa492CeA7Cb1f5C5eA660EB1B47': 8888,
 
@@ -131,6 +137,9 @@ export const nfts = {
 
     // GEMMA
     '0xc7D84b7d4a04ABcB9ADE97b8af212423F51D2aEA': 5000,
+
+    // G RILLA
+    '0x3f635476023a6422478cf288ecaeb3fdcf025e9f': 10000,
 
     // Gunslingers
     '0x7350271594848AB8c0371EF4aFeEf199c69c3E05': 7777,
@@ -201,6 +210,9 @@ export const nfts = {
     // MoodRollers
     '0xE3234e57ac38890a9136247EAdFE1860316Ff6ab': 5000,
 
+    // MTZD
+    '0x46dbdc7965cf3cd2257c054feab941a05ff46488': 9700,
+
     // Mutant Ape Yacht Club
     '0x60E4d786628Fea6478F785A6d7e704777c86a7c6': 17718,
 
@@ -215,6 +227,9 @@ export const nfts = {
 
     // NFTrees
     '0xeaa4c58427c184413b04db47889b28b5c98ebb7b': 420,
+
+    // NFT Worlds
+    '0xBD4455dA5929D5639EE098ABFaa3241e9ae111Af': 10000,
 
     // Nuclear Nerds
     '0x0F78C6eEE3C89Ff37fD9ef96bD685830993636F2': 8999,
@@ -279,6 +294,9 @@ export const nfts = {
     // SupDucks
     '0x3Fe1a4c1481c8351E91B64D5c398b159dE07cbc5': 10000,
 
+    // Tasty Bones
+    '0x1b79c7832ed9358E024F9e46E9c8b6f56633691B': 5049,
+
     // The Heart Project
     '0xce50f3cA1F1Dbd6Fa042666bC0e369565dda457D': 9812,
 
@@ -293,6 +311,9 @@ export const nfts = {
 
     // The Metapreneurs
     '0x4fEEc948eB3d6a2Eb37560d4B2c16f1C9fe72Ef6': 10000,
+
+    // The Other Side
+    '0xcB4307F1c3B5556256748DDF5B86E81258990B3C': 8888,
 
     // The Sandbox
     '0x50f5474724e0Ee42D9a4e711ccFB275809Fd6d4a': 10000,
