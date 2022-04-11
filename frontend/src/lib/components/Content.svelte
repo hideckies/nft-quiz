@@ -3,6 +3,15 @@
     import ModalResult from '$lib/components/ModalResult.svelte';
     import { nfts } from '$lib/NFTs';
     import { getRandIntRange, getRandKeyFromObj } from '$lib/Utils';
+    import { OPENSEA_API_KEY } from '$lib/Env';
+
+    let OpenSeaApiKey;
+
+    if (process.env.NODE_ENV === 'production') {
+        OpenSeaApiKey = process.env.OPENSEA_API_KEY;
+    } else {
+        OpenSeaApiKey = OPENSEA_API_KEY;
+    }
 
     let startConfetti;
     let stopConfetti;
@@ -51,7 +60,12 @@
     }
 
     async function getNFT(contractAddress, totalSupply) {
-        const options = {method: 'GET'};
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-API-KEY': OpenSeaApiKey
+            }
+        };
 
         // Random token Id
         const tokenId = getRandIntRange(0, totalSupply);

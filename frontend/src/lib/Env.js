@@ -1,0 +1,1 @@
+export const OPENSEA_API_KEY = import.meta.env.VITE_OPENSEA_API_KEY;
