@@ -54,6 +54,9 @@ export const nfts = {
     // CloneX
     '0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b': 18430,
 
+    // Cold Blooded Creepz
+    '0xfE8C6d19365453D26af321D0e8c910428c23873F': 11111,
+
     // Cool Cats
     '0x1A92f7381B9F03921564a437210bB9396471050C': 9933,
 
@@ -171,6 +174,9 @@ export const nfts = {
     // JOYWORLD JOYtoy
     '0x0574c34385b039c2bb8db898f61b7767024a9449': 2852,
 
+    // JustCubes
+    '0x07ce5D64B7b845C8ff645E9A3825f94e6BDd82F1': 4444,
+
     // Killer GF
     '0x6be69b2a9b153737887cfcdca7781ed1511c7e36': 7760,
 
@@ -230,6 +236,9 @@ export const nfts = {
 
     // NFT Worlds
     '0xBD4455dA5929D5639EE098ABFaa3241e9ae111Af': 10000,
+
+    // Nouns
+    '0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03': 284,
 
     // Nuclear Nerds
     '0x0F78C6eEE3C89Ff37fD9ef96bD685830993636F2': 8999,
@@ -344,4 +353,7 @@ export const nfts = {
 
     // ZED Horses
     '0xA5F1Ea7DF861952863dF2e8d1312f7305dabf215': 186983,
+
+    // Zooverse
+    '0x73382b19Fe136907e9fd4cb1D55228237566324C': 444
 };

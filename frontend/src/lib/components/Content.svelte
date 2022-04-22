@@ -264,6 +264,5 @@
     #answer {
         margin: 32px 0 0 0;
         font-size: 2.4em;
-        font-weight: bold;
     }
 </style>
